@@ -1,5 +1,11 @@
 ---
 
+- name: Download file with check (md5)
+  get_url:
+    url: {{nessus_agent_download_url}}
+    dest: {{nessus_agent_package}}
+    checksum: {{nessus_agent_md5}}
+
 - name: Install Nessus Agent from repo
   package: name={{nessus_agent_package}}
   when: "'.deb' not in nessus_agent_package"
