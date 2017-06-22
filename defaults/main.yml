@@ -12,4 +12,4 @@ nessus_agent_host: cloud.tenable.com
 nessus_agent_port: 443
 
 nessus_agent_download_url: https://s3.amazonaws.com/midaxo-installations-us/NessusAgent-6.10.7-ubuntu1110_amd64.deb
-nessus_agent_md5: "MD5: 6784fb3ef79a98199285816972bf62e5"
+nessus_agent_md5: 6784fb3ef79a98199285816972bf62e5

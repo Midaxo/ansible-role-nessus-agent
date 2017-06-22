@@ -2,9 +2,8 @@
 
 - name: Download file with check (md5)
   get_url:
-    url: {{nessus_agent_download_url}}
-    dest: {{nessus_agent_package}}
-    checksum: {{nessus_agent_md5}}
+    url: "{{nessus_agent_download_url}}"
+    dest: md5:{{nessus_agent_package}}
 
 - name: Install Nessus Agent from repo
   package: name={{nessus_agent_package}}
@@ -33,3 +32,8 @@
 
 - name: Ensure nessusagent is started
   service: name=nessusagent state=started enabled=yes
+
+- name: Cleanup install script
+  file:
+    name: '{{nessus_agent_package}}'
+    state: absent
