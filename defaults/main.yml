@@ -1,15 +1,15 @@
 ---
 
 # required variable
-#nessus_agent_key: ''
-#nessus_agent_group: ''
+nessus_agent_key: 'db9ed1a1b707ae9baf987c698aa8919a8ba378f73d50573ca6047c4e818609cb'
+nessus_agent_group: 'DEFAULT'
 
 # can be either a repository package or a path to a file
 #     nessus_agent_package: nessus-agent
-nessus_agent_package: /tmp/NessusAgent-6.10.7-ubuntu1110_amd64.deb
+nessus_agent_package: /tmp/NessusAgent-7.0.0-ubuntu1110_amd64.deb
 
 nessus_agent_host: cloud.tenable.com
 nessus_agent_port: 443
 
-nessus_agent_download_url: https://s3.amazonaws.com/midaxo-installations-us/NessusAgent-6.10.7-ubuntu1110_amd64.deb
-nessus_agent_md5: 6784fb3ef79a98199285816972bf62e5
+nessus_agent_download_url: https://s3.amazonaws.com/midaxo-installations-us/NessusAgent-7.0.0-ubuntu1110_amd64.deb
+nessus_agent_md5: 050b98d68843d984872de7a9c6d3a87c
